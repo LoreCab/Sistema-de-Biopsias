@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="../Css/bootstrap.min.css" />
 </head>
 <body>
-    <body>
     <div class="container-fluid bg-primary">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
