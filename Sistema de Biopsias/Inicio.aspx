@@ -35,7 +35,7 @@
                                     aria-expanded="false">PACIENTES
                                 </a>
                                 <ul class="dropdown-menu bg-primary">
-                                    <li><a class="dropdown-item" href="RegistrarBiopsia.aspx">Registrar Paciente</a></li>
+                                    <li><a class="dropdown-item" href="RegistrarBiopsia.aspx">Registrar Biopsia</a></li>
                                     <li><a class="dropdown-item" href="#">Consultar Paciente</a></li>
                                     <li><a class="dropdown-item" href="#">Modificar Paciente</a></li>
                                 </ul>
