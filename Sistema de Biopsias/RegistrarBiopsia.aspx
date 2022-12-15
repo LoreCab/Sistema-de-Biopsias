@@ -17,11 +17,15 @@
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="Imagenes/61802(1).jpg" width: 100%  class="d-block w-100" alt="..." width="100" height="100"/>
+                <img src="Imagenes/61802(1).jpg"  border="5" class="d-block w-100" alt="..." width="100%" height="100%"/>
             </div>
         </div>
     </div>
-
+    <footer id="Footer" class="py-2" style="background-color: #1D7FAC; margin-top: 1em" runat="server">
+        <div class="container">
+            <p class="m-0 text-center text-white" id="clfooter">&copy; HOSPITAL PABLO SORIA - 2022</p>
+        </div>
+    </footer>
 </body>
 
    
