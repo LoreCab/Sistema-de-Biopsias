@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Css\bootstrap.min.css" />
+    <Content Include="Imagenes\LogoHPS.svg" />
     <Content Include="Imagenes\Rex1.jpg" />
     <Content Include="Imagenes\Rex3.jpg" />
     <Content Include="Imagenes\Rex4.jpg" />
