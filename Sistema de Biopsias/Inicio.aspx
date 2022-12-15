@@ -49,7 +49,7 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="Imagenes/LogoHPS.svg"  class="d-block w-100" alt="..." width="100" height="100"/>
+                <%--<img src="Imagenes/LogoHPS.svg"  class="d-block w-100" alt="..." width="100" height="100"/>--%>
             </div>
         </div>
     </div>
@@ -61,11 +61,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
         integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
         crossorigin="anonymous"></script>
+    <footer>
+        <p> HOSPITAL PABLO SORIA - 2022</p>
+    </footer>
 
-     <footer  id="Footer" class="py-2" style="background-color: #1D7FAC; margin-top: 1em"runat="server">
+     <%--<footer  id="Footer" class="py-2" style="background-color: #1D7FAC; margin-top: 1em"runat="server">
         <div class="container">
             <p class="m-0 text-center text-white" id="clfooter">&copy; HOSPITAL PABLO SORIA - 2022</p>
         </div>
-    </footer>
+    </footer>--%>
 </body>
 </html>
