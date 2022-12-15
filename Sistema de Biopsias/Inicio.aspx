@@ -49,7 +49,7 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <%--<img src="Imagenes/LogoHPS.svg"  class="d-block w-100" alt="..." width="100" height="100"/>--%>
+                <img src="Imagenes/Rex1.jpg"  class="d-block w-100" alt="..." width="100" height="100"/>
             </div>
         </div>
     </div>
