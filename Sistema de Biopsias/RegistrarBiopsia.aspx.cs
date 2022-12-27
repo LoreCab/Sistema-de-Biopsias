@@ -19,12 +19,15 @@ namespace Sistema_de_Biopsias
         {
             if (GridView1.Rows.Count == 0)
             {
-                Panel1.Visible = true;
+                
             }
             else 
             {
-                
-                
+                Panel1.Visible = true;
+                TextBox1.Text = GridView1.Rows[0].Cells[1].Text;
+                TextBox2.Text = GridView1.Rows[0].Cells[2].Text; 
+                TextBox4.Text = GridView1.Rows[0].Cells[3].Text;
+
             }
 
 

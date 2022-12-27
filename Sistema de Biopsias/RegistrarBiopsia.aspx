@@ -97,7 +97,11 @@ input[type=submit]:hover {
       <br />
       <div class="row">
           
-          <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:BiopsysConnectionString %>" SelectCommand="SELECT * FROM [Personas]" OnSelecting="SqlDataSource1_Selecting"></asp:SqlDataSource>
+          <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:BiopsysConnectionString %>" SelectCommand="SELECT * FROM [Personas] WHERE ([dni] = @dni)" OnSelecting="SqlDataSource1_Selecting">
+              <SelectParameters>
+                  <asp:ControlParameter ControlID="TextBox3" Name="dni" PropertyName="Text" Type="String" />
+              </SelectParameters>
+          </asp:SqlDataSource>
           <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource1" Visible="False">
               <Columns>
                   <asp:BoundField DataField="id" HeaderText="id" InsertVisible="False" ReadOnly="True" SortExpression="id" />
@@ -105,6 +109,7 @@ input[type=submit]:hover {
                   <asp:BoundField DataField="apellido" HeaderText="apellido" SortExpression="apellido" />
                   <asp:BoundField DataField="direccion" HeaderText="direccion" SortExpression="direccion" />
                   <asp:BoundField DataField="obrasocial" HeaderText="obrasocial" SortExpression="obrasocial" />
+                  <asp:BoundField DataField="dni" HeaderText="dni" SortExpression="dni" />
               </Columns>
           </asp:GridView>
           <br />
