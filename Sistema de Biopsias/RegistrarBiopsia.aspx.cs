@@ -17,9 +17,14 @@ namespace Sistema_de_Biopsias
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if (GridView1.Rows.Count==0) 
-            { 
-              Panel1.Visible = true;
+            if (GridView1.Rows.Count == 0)
+            {
+                
+            }
+            else 
+            {
+                Panel1.Visible = true;
+                
             }
 
 

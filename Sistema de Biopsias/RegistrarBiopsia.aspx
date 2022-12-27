@@ -87,10 +87,10 @@ input[type=submit]:hover {
       <label for="fname">DNI:</label>
     </div>
     <div class="col-75">
-      <input type="text" id="fname" name="firstname" placeholder="Ingrese dni del paciente ...">
+      <asp:TextBox ID="TextBox3" runat="server" placeholder="Ingrese dni del paciente ..."></asp:TextBox>      
         <br />
         <br />
-        
+       
     </div>
       <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="BUSCAR" />
   </div>
@@ -114,16 +114,20 @@ input[type=submit]:hover {
       <label for="nombres">Nombres: </label>
     </div>
     <div class="col-75">
-      <input type="text" id="nombres" name="nombres" placeholder="Ingrese los nombres del paciente..">
+       
+       <asp:TextBox ID="TextBox1" runat="server" placeholder="Ingrese los nombres del paciente.."></asp:TextBox>   
     </div>
+                  
   </div>
 <div class="row">
     <div class="col-25">
       <label for="lname">Apellidos: </label>
     </div>
     <div class="col-75">
-      <input type="text" id="lname" name="lastname" placeholder="Ingrese los apellidos del pacientes..">
+      
+      <asp:TextBox ID="TextBox2" runat="server" placeholder="Ingrese los apellidos del pacientes.."></asp:TextBox>
     </div>
+    
   </div>
 
   <div class="row">
@@ -146,9 +150,9 @@ input[type=submit]:hover {
       </select>
     </div>
   </div>
-  <br>
+  <br/>
 <div class="row">
-    <input type="submit" value="CARGAR">
+    <input type="submit" value="CARGAR"/>
   </div>
             
 
