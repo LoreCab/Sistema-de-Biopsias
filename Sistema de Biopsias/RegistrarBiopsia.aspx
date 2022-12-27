@@ -109,6 +109,14 @@ input[type=submit]:hover {
           </asp:GridView>
           <br />
           <asp:Panel ID="Panel1" runat="server" Visible="false">
+              <div class="row">
+    <div class="col-25">
+      <label for="nombres">Nombres: </label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="nombres" name="nombres" placeholder="Ingrese los nombres del paciente..">
+    </div>
+  </div>
 <div class="row">
     <div class="col-25">
       <label for="lname">Apellidos: </label>
