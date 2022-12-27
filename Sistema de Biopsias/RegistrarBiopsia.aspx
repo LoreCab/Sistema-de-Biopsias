@@ -81,16 +81,35 @@ input[type=submit]:hover {
 <p></p>
 
 <div class="container">
-  <form action="/action_page.php">
+        </div>
   <div class="row">
     <div class="col-25">
-      <label for="fname">Nombres:</label>
+      <label for="fname">DNI:</label>
     </div>
     <div class="col-75">
-      <input type="text" id="fname" name="firstname" placeholder="Ingrese los nombres del paciente ...">
+      <input type="text" id="fname" name="firstname" placeholder="Ingrese dni del paciente ...">
+        <br />
+        <br />
+        
     </div>
+      <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="BUSCAR" />
   </div>
-  <div class="row">
+      <br />
+      <div class="row">
+          
+          <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:BiopsysConnectionString %>" SelectCommand="SELECT * FROM [Personas]" OnSelecting="SqlDataSource1_Selecting"></asp:SqlDataSource>
+          <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource1" Visible="False">
+              <Columns>
+                  <asp:BoundField DataField="id" HeaderText="id" InsertVisible="False" ReadOnly="True" SortExpression="id" />
+                  <asp:BoundField DataField="nombre" HeaderText="nombre" SortExpression="nombre" />
+                  <asp:BoundField DataField="apellido" HeaderText="apellido" SortExpression="apellido" />
+                  <asp:BoundField DataField="direccion" HeaderText="direccion" SortExpression="direccion" />
+                  <asp:BoundField DataField="obrasocial" HeaderText="obrasocial" SortExpression="obrasocial" />
+              </Columns>
+          </asp:GridView>
+          <br />
+          <asp:Panel ID="Panel1" runat="server" Visible="false">
+<div class="row">
     <div class="col-25">
       <label for="lname">Apellidos: </label>
     </div>
@@ -103,7 +122,7 @@ input[type=submit]:hover {
     <div class="col-25">
       <label for="subject">Direccion</label>
     </div>
-    <div class="col-75">
+     <div class="col-75">
       <textarea id="subject" name="subject" placeholder="Ingrese direccion donde vive el paciente.." style="height:100px"></textarea>
     </div>
   </div>
@@ -120,10 +139,18 @@ input[type=submit]:hover {
     </div>
   </div>
   <br>
-  <div class="row">
+<div class="row">
     <input type="submit" value="CARGAR">
   </div>
-  </form>
+            
+
+
+          </asp:Panel>
+  </div>
+            
+           
+  
+    </form>
 </div>
         </div>
              
@@ -132,7 +159,7 @@ input[type=submit]:hover {
 
 <footer id="Footer" class="py-2" style="background-color: #1D7FAC; margin-top: 1em" runat="server">
         <div >
-            <p class="m-0 text-center text-black" id="clfooter">&copy; HOSPITAL PABLO SORIA - 2022</p>
+            <p class="m-0 text-center text-black" id="clfooter">&copy; HOSPITAL PABLO SORIA - 2022
         </div>
     </footer>
 
