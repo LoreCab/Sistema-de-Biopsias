@@ -135,29 +135,29 @@ input[type=submit]:hover {
       <label for="subject">Direccion</label>
     </div>
      <div class="col-75">
-      <textarea id="subject" name="subject" placeholder="Ingrese direccion donde vive el paciente.." style="height:100px"></textarea>
-    </div>
+       <asp:TextBox ID="TextBox4" runat="server" placeholder="Ingrese direccion donde vive el paciente.." style="height:100px"></asp:TextBox>
+     </div>
+      
   </div>
         <div class="row">
     <div class="col-25">
       <label for="country">Obra social</label>
     </div>
     <div class="col-75">
-      <select id="country" name="country">
-        <option value="australia">Obra1</option>
-        <option value="canada">Obra2</option>
-        <option value="usa">Obra3</option>
-      </select>
+      
+        <asp:DropDownList ID="DropDownList1" runat="server">
+        </asp:DropDownList>
+      
     </div>
   </div>
+              <asp:SqlDataSource ID="SqlDataSource2" runat="server"></asp:SqlDataSource>
   <br/>
 <div class="row">
-    <input type="submit" value="CARGAR"/>
-  </div>
-            
-
-
-          </asp:Panel>
+    <asp:Button ID="Button2" runat="server" Text="CARGAR" OnClick="Button2_Click" />
+</div>
+        
+      <br />    
+  </asp:Panel>
   </div>
             
            

@@ -19,11 +19,11 @@ namespace Sistema_de_Biopsias
         {
             if (GridView1.Rows.Count == 0)
             {
-                
+                Panel1.Visible = true;
             }
             else 
             {
-                Panel1.Visible = true;
+                
                 
             }
 
@@ -33,6 +33,11 @@ namespace Sistema_de_Biopsias
         protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
         {
 
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("RBiopsia.aspx");
         }
     }
 }

@@ -74,6 +74,7 @@
     <Content Include="Imagenes\Rex3.jpg" />
     <Content Include="Imagenes\Rex4.jpg" />
     <Content Include="Inicio.aspx" />
+    <Content Include="RBiopsia.aspx" />
     <Content Include="RegistrarBiopsia.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -87,6 +88,13 @@
       <DependentUpon>Inicio.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RBiopsia.aspx.cs">
+      <DependentUpon>RBiopsia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RBiopsia.aspx.designer.cs">
+      <DependentUpon>RBiopsia.aspx</DependentUpon>
+    </Compile>
     <Compile Include="RegistrarBiopsia.aspx.cs">
       <DependentUpon>RegistrarBiopsia.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
