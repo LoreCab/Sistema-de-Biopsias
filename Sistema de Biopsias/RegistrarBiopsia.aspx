@@ -84,7 +84,7 @@ input[type=submit]:hover {
         </div>
   <div class="row">
     <div class="col-25">
-      <label for="fname">DNI:</label>
+      <label for="fname">&nbsp; DNI:</label>
     </div>
     <div class="col-75">
       <asp:TextBox ID="TextBox3" runat="server" placeholder="Ingrese dni del paciente ..."></asp:TextBox>      
@@ -116,7 +116,7 @@ input[type=submit]:hover {
           <asp:Panel ID="Panel1" runat="server" Visible="false">
               <div class="row">
     <div class="col-25">
-      <label for="nombres">Nombres: </label>
+      <label for="nombres">&nbsp; Nombres: </label>
     </div>
     <div class="col-75">
        
@@ -126,7 +126,7 @@ input[type=submit]:hover {
   </div>
 <div class="row">
     <div class="col-25">
-      <label for="lname">Apellidos: </label>
+      <label for="lname">&nbsp; Apellidos: </label>
     </div>
     <div class="col-75">
       
@@ -137,7 +137,7 @@ input[type=submit]:hover {
 
   <div class="row">
     <div class="col-25">
-      <label for="subject">Direccion</label>
+      <label for="subject">&nbsp; Direccion</label>
     </div>
      <div class="col-75">
        <asp:TextBox ID="TextBox4" runat="server" placeholder="Ingrese direccion donde vive el paciente.." style="height:100px"></asp:TextBox>
@@ -146,14 +146,15 @@ input[type=submit]:hover {
   </div>
         <div class="row">
     <div class="col-25">
-      <label for="country">Obra social</label>
+      <label for="country">&nbsp; Obra social</label>
     </div>
     <div class="col-75">
       
-        <asp:DropDownList ID="DropDownList1" runat="server">
+        <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="nombre" DataValueField="nombre">
         </asp:DropDownList>
       
     </div>
+            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:BiopsysConnectionString %>" SelectCommand="SELECT [nombre] FROM [obrasocial]"></asp:SqlDataSource>
   </div>
   <br/>
 <div class="row">
