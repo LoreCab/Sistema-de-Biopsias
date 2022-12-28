@@ -155,7 +155,6 @@ input[type=submit]:hover {
       
     </div>
   </div>
-              <asp:SqlDataSource ID="SqlDataSource2" runat="server"></asp:SqlDataSource>
   <br/>
 <div class="row">
     <asp:Button ID="Button2" runat="server" Text="CARGAR" OnClick="Button2_Click" />

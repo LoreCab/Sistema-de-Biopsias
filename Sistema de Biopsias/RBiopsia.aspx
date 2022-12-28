@@ -81,7 +81,7 @@ input[type=submit]:hover {
 
         <div class="row">
     <div class="col-25">
-      <label for="fdni">DNI:</label>
+      <label for="fdni">&nbsp;&nbsp; DNI:</label>
     </div>
     <div class="col-75">
       <asp:TextBox ID="TextBox3" runat="server" placeholder="Ingrese dni del paciente ..."></asp:TextBox>      
